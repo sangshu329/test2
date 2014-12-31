@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>注意力公关</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/index.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery-ui-1.10.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script>
+$(document).ready(function() {
+	$.fn.fullpage({
+		slidesColor: ['#000', '#000', '#000', '#000','#000'],
+		anchors: ['page1', 'page2', 'page3', 'page4','page5'],
+		menu:'#menu',
+		navigation: true,
+	});
+});
+</script>
+</head>
+
+<body>
+<ul id="menu" class="pf">
+	<div class="logo pa"><img src="images/logo.png" height="55" width="177" alt=""></div>
+	<li data-menuanchor="page5"><a href="#page5">Contact </a></li>
+	<li data-menuanchor="page4"><a href="#page4">Team </a></li>
+	<li data-menuanchor="page3"><a href="#page3">News </a></li>
+	<li data-menuanchor="page2"><a href="#page2">Work </a></li>
+	<li data-menuanchor="page1" class="active"><a href="#page1">About</a></li>
+</ul>
+<div class="section pr" id="sec01">
+	<!-- <div class="sec_bk pa"><img src="images/page1_bk.jpg" height="800" width="1600" alt=""></div> -->
+	<ul class="sec1_ul pr">
+		<li><img src="images/sec01_ico1.png" height="311" width="308" alt="">
+			<div class="pa sec1_lidown" style="background:url(images/sec01_ico1bk.png) no-repeat center;"></div>
+		</li>
+		<li><img src="images/sec01_ico2.png" height="311" width="309" alt="">
+			<div class="pa sec1_lidown" style="background:url(images/sec01_ico2bk.png) no-repeat center;"></div>
+		</li>
+		<li><img src="images/sec01_ico3.png" height="311" width="311" alt="">
+		<div class="pa sec1_lidown" style="background:url(images/sec01_ico3bk.png) no-repeat center;"></div>
+		</li>
+		<dl class="sec1_dl pa">
+			<dd>- Attention is Productivity 数字注意力时代的生产力 -</dd>
+			<dd>- 一群数字环境下的高度沉浸者 -</dd>
+			<dd>- big idea | Technology |Touch -</dd>
+		</dl>
+	</ul>	
+</div>
+<div class="section pr" id="sec2">
+	<div class="sec_maincon pa">
+	<!-- 	<div class="container2">
+		<ul>
+			<li><img src="images/1.jpg" alt="" /></li>
+			<li><img src="images/2.jpg" alt="" /></li>
+			<li><img src="images/3.jpg" alt="" /></li>
+			<li><img src="images/4.jpg" alt="" /></li>
+			<li><img src="images/5.jpg" alt="" /></li>
+			<li><img src="images/6.jpg" alt="" /></li>
+			<li><img src="images/7.jpg" alt="" /></li>
+			<li><img src="images/8.jpg" alt="" /></li>
+		</ul>
+	</div> -->
+		<ul class="sec2ul pa" id="sec2ul">
+			<li class="fl">
+			<img src="images/sec02_ico1.png" height="461" width="400" alt="">
+			<div class="sec2_li_bk pa">张裕品牌管理案例</div>
+			</li>
+			<li class="fl"><img src="images/sec02_ico2.png" height="461" width="400" alt=""></li>
+			<li class="fl"><img src="images/sec02_ico5.png" height="461" width="399" alt=""></li>
+			<li class="fl"><img src="images/sec02_ico7.png" height="461" width="399" alt=""></li>
+			<li class="fl"><img src="images/sec02_ico9.png" height="461" width="400" alt=""></li>
+		</ul>
+		<ul class="sec2btmul pa">
+			<li class="fl"><img src="images/sec02_ico3.png" height="461" width="400" alt=""></li>
+			<li class="fl"><img src="images/sec02_ico4.png" height="461" width="399" alt=""></li>
+			<li class="fl"><img src="images/sec02_ico6.png" height="461" width="400" alt=""></li>
+			<li class="fl"><img src="images/sec02_ico8.png" height="461" width="400" alt=""></li>
+			<li class="fl"><img src="images/sec02_ico10.png" height="461" width="400" alt=""></li>
+		</ul>
+	</div>
+<!-- 	<div class="slide"><h3>第二屏的第一屏</h3></div>
+<div class="slide"><h3>第二屏的第二屏</h3></div>
+<div class="slide"><h3>第二屏的第三屏</h3></div> -->
+</div>
+<div class="section">
+	<h3>第三屏</h3>
+</div>
+<div class="section">
+	<h3>第四屏</h3>
+	<p>这是最后一屏</p>
+</div>
+<div class="section">
+	<h3>第五屏</h3>
+	<p>这是最后一屏</p>
+</div>
+
+
+
+<script src="js/index.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js" ></script>
+<script type="text/javascript" src="js/hScrollPane.js" ></script>
+<script>
+	$("#sec2").hScrollPane({
+		mover:".sec_maincon",
+		moverW:function(){return $("#sec2ul li").length*462;}(),
+		showArrow:true,
+		handleCssAlter:"",
+		mousewheel:{moveLength:207}
+	});
+</script>
+
+</body>
+</html>
